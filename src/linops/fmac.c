@@ -60,8 +60,6 @@ static const complex float* get_tensor(const struct fmac_data* data, bool gpu)
 {
 	const complex float* tensor = data->tensor;
 
-	debug_print_dims(DP_INFO, data->N, data->tdims);
-
 	if (gpu) {
 
 		if (NULL == data->gpu_tensor)
